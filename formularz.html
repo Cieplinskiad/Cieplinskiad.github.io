@@ -31,7 +31,9 @@
 	  <br>
 	  <a href="mapy odsylaczy.html"> MAPY ODSYŁACZY </a>
 	  <br>
-	  <a href="formularz.html"> FORMULARZE </a>
+	  <a href="formularz.html"> FORMULARZ </a>
+	  <br>
+	  <a href="canvas.html"> Canvas </a>
 	  <br>
 	</div>
 
@@ -96,14 +98,53 @@ CHN
 <option value="pomarancza">Piłka Nożna</option>
 </optgroup>
 </select>
+<input type="submit" value="wyślij"/>
+<p> <button type="submit" name="wyślij"> Wyślij </button></p>
+<p> <button type="reset" name="reset"> Resetuj </button></p>
+<p> <button type="button" name="powróć" style="font:12pt arial; background:red;"> Powróć </button></p>
+<p>
+	<select id="days[]" name="days[]" size="7" multiple>
+		<optgroup label="DNI WOLNE">
+			<option> SOBOTA </option>
+			<option> NIEDZIELA </option>
+		</optgroup>
+		<optgroup label="DNI ROBOCZE">
+			<option> PONIEDZIAŁEK </option>
+			<option> WTOREk </option>
+			<option> ŚRODA </option>
+			<option> CZWARTEK </option>
+			<option> PIĄTEK </option>
+		</optgroup></select></p>
+<p><textarea cols="50" rows="6">
+Jan Niezbędny
+ul.Nieznaza 3
+40-001 Katowice
+Polska
+</textarea></p>
+<input type="image" name="zdjęcie" src="Fotyac/gekon.jfif"/>
+<fieldset>
+<legend>WYKSZTAŁCENIE: </legend>
+<p><input type="radio" name="gr_op" value="Podstawowe" accesskey="P"/> Podstawowe [skrót ALT+P]<br />
+<input type="radio" name="gr_op" value="Średnie" accesskey="S"/> Śrenie [skrót ALT+S]<br />
+<input type="radio" name="gr_op" value="Wyższe" accesskey="W"/>Wyższe [skrót ALT+W]<br />
+</fieldset>
+<h2> Zdarzenie onfocus oraz onblur </h2>
 
+<p> Po "wjeściu" do pola input, funkcja ustawia kolor tła na żółty </p>
+<p> Po opuszczeniu pola input, funckja ustawia kolor tła na czerwony </p>
 
+Wpisz Swoje Imię i Nazwisko:
+<input type="text" id="myInput" onfocus="focusFunction()" onblur="blurFunction()">
 
+<script>
+function focusFunction() {
+	document.getElementById("myInput").style.background = "yellow";
+}
 
-
-
-
-
+function focusFunction() {
+	document.getElementById("myInput").style.background = "red";
+}
+</script>
 
 </body>
 </html>

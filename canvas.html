@@ -33,8 +33,25 @@
 	  <br>
 	  <a href="formularz.html"> FORMULARZ </a>
 	  <br>
-	  <a href="canvas.html"> Canvas </a>
-	  <br>
 	</div>
+	<canvas id="moja_kanwa" width="300" height="200" style="border:1px solid blue;"> BRAK OBSŁUGI CANVAS </canvas>
+	<script>
+	var x = document.getElementById("moja_kanwa");
+	var xtx = x.getContext('2d');
+	xtx.moveTo(0,0);
+	xtx.lineTo(300,200);
+	xtx.strokeStyle = "red";
+	xtx.stroke();
+	
+	var k = document.getElementById("moja_kanwa");
+	var kxt = k.getContext('2d');
+	kxt.fillStyle = "green";
+	kxt.fillRect(50,50,70,70);
+	kxt.strokeStyle = "purple";
+	kxt.strokeRect(40,40,90,90);
+	</script>
+	
+	
+	
 </head>
 </html>
